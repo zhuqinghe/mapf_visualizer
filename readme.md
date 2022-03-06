@@ -18,7 +18,9 @@ python visualizer.py -m ../input/random-32-32-20.map -p ../input/paths.txt -s Tr
 
 Visualize gridmap and number, current and target position of agents based on input map and MAPF algorithm solution(list of paths). 
 
+<div align=center>
 <img src="50-agent_48-setp.gif" width="60%" height="60%">
+<div>
 
 #### (2)数据/Data
 |变量/variable|描述/description|数据结构/datastructure|

@@ -88,7 +88,7 @@ class Visualizer(object):
       # Save into a GIF file that loops forever
       imageio.mimsave('../{}-agent_{}-setp.gif'.\
                       format(self.agent_num, self.max_time), 
-                      frames, duration=1000//30, loop=0)
+                      frames, duration=1/30.0, loop=1)
       # frames[0].save('../img/{}-agent_{}-setp.gif' \
       #                 .format(self.agent_num, self.max_time), 
       #                 format='GIF',
@@ -302,5 +302,5 @@ if __name__ == '__main__':
   save_mode = args.save_mode
 
   vis = Visualizer(map_file, path_file, show_start=0, save_video=save_video, save_mode=save_mode)
-  vis.display()
-  # vis.saveVideo(1200,1200)
+  # vis.display()
+  vis.saveVideo(1200,1200)
